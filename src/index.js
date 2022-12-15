@@ -2,22 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import Router from './aplication/Router';
 import App from './App';
-import Home from './pages/Home';
-import Discover from './pages/Discover';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router />
     <App />
-    <Home />
-    <Discover />
-    <About />
-    <NotFound />
   </React.StrictMode>
 );
 

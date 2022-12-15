@@ -1,26 +1,27 @@
-import React from 'react'
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import '../components/styles/NavBar.css'
+import { Link } from 'react-router-dom';
+import '../components/styles/NavBar.css';
+import Logo from '../images/logo.png';
 
 function NavBar() {
-    return (
-      <>
-        <Navbar bg="dark">
-          <Container>
-            <Navbar.Brand href="#home">
-              <img
-                src="./images/logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-              />
-            </Navbar.Brand>
-          </Container>
-        </Navbar>
-      </>
-    );
-  }
+  return (
+    <>
+      <Navbar className='navbar-custom'>
+        <Container>
+          <Navbar.Brand href="">
+            <img src={Logo} width="50" height="50" className="d-inline-flex align-center" alt="React Bootstrap logo"/>
+            <h1 className='d-inline-flex ms-3'>Soundwave</h1>
+          </Navbar.Brand>
+          <Navbar>
+            <Link className="navbar-item me-3" activeClassName="is-active" to="/Discover" exact>Discover</Link>
+            <Link className="navbar-item" activeClassName="is-active" to="/Join" exact>Join</Link>
+          </Navbar>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
   
   export default NavBar;

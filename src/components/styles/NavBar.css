@@ -1,0 +1,17 @@
+.navbar-custom {
+  background-color: #2F303A;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-item:hover{
+  color: rgb(186, 29, 147);
+}
