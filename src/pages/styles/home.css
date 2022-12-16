@@ -1,0 +1,14 @@
+h1{
+  font-size: 1.2rem;
+  grid-column-start: 2;
+}
+
+p{
+  color: #fff;
+  grid-column-start: 2;
+}
+
+.encabezado{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

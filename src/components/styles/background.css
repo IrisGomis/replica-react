@@ -1,0 +1,24 @@
+.position{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+
+
+}
+
+.bola-morada{
+  grid-row: 2/4;
+  grid-column: 1/2;
+  width: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #bc3a801a;
+}
+
+.bola-morada::after{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}

@@ -1,6 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 body {
+  display: flex;
+  flex-direction: column;
+  background-color: #2F303A;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Poppins',
     sans-serif;

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import '../components/styles/NavBar.css';
+import '../components/styles/navBar.css';
 import Logo from '../images/logo.png';
 
 function NavBar() {
@@ -10,7 +10,7 @@ function NavBar() {
     <>
       <Navbar className='navbar-custom'>
         <Container>
-          <Navbar.Brand href="">
+          <Navbar.Brand href="/">
             <img src={Logo} width="50" height="50" className="d-inline-flex align-center" alt="React Bootstrap logo"/>
             <h1 className='d-inline-flex ms-3'>Soundwave</h1>
           </Navbar.Brand>
